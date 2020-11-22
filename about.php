@@ -46,7 +46,7 @@
                             <li><a href="index.html">Home</a></li>
                             <li class="current">
                                 <a href="about.html">About</a>
-        
+
                             </li>
                             <li><a href="files.html">Files</a></li>
                             <li><a href="contacts.html">Contacts</a></li>
@@ -67,9 +67,9 @@
             <h2 class="header_2 indent_1">About the Division</h2>
             <div class="box_4">
                 <p class="text_5">
-                    The primary legislative framework for debt management in Ghana is the 1992 Constitution of the Republic of Ghana. 
+                    The primary legislative framework for debt management in Ghana is the 1992 Constitution of the Republic of Ghana.
                     The secondary legislative enactment which also provides guidance and support in the management of the public debt are
-                    the Public Financial Management, 
+                    the Public Financial Management,
                     2016 Act 921 (PFMA) and the Public Procurement, 2016 Act 914.
                 </p>
                 <a href="https://www.mofep.gov.gh/divisions/dmd/overview" class="btn_2">read more</a>
@@ -78,7 +78,7 @@
         <div class="grid_5">
             <div class="img-wrap">
                 <img data-src="images/about1.jpg" class="img_1" src="images/about1.jpg" alt="Image 1"/>
-               
+
             </div>
             <div class="clearfix"></div>
         </div>
@@ -98,7 +98,7 @@
                 <div class="box_4">
                     <p class="text_5">
                         The main debt management objective is to minimize the financial cost of the public debt while maintaining
-                        the market and operational risks at an acceptable level, taking into account the general objectives of the fiscal and monetary policies. 
+                        the market and operational risks at an acceptable level, taking into account the general objectives of the fiscal and monetary policies.
                         To achieve this, the Division is challenged to pursue rigorously the following six (6) broad objectives:
                     </p>
                     <div class="row">
@@ -115,7 +115,7 @@
                                     <li>4. Operational framework
                                         Develop relevant systems, procedures and controls to improve operational efficiency and minimize risk within a
                                         framework of comprehensive business continuity plan</li>
-                                    
+
                         </ul>
                     </p>
                     </div>
@@ -189,7 +189,7 @@
                                     <li><a href="#"><img src="images/gra.png" alt="Image 9"/></a></li>
                                     <li><a href="#"><img src="images/controller.jpg" alt="Image 10"/></a></li>
                                     <li><a href="#"><img src="images/secg.jpg" alt="Image 11"/></a></li>
-                        
+
                                 </ul>
                             </div>
                         </div>
@@ -201,7 +201,7 @@
                                     <li><a href="#"><img src="images/gra.png" alt="Image 9"/></a></li>
                                     <li><a href="#"><img src="images/controller.jpg" alt="Image 10"/></a></li>
                                     <li><a href="#"><img src="images/secg.jpg" alt="Image 11"/></a></li>
-                                    
+
                                 </ul>
                             </div>
                         </div>

@@ -51,10 +51,11 @@
                             <li class="current"><a href="index.html">Home</a></li>
                             <li>
                                 <a href="about.html">About</a>
-            
+
                             </li>
-                            <li><a href="file.html">Files</a></li>
+                            <!-- <li><a href="file.html">Files</a></li> -->
                             <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="contacts.html">Login/Register</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -121,7 +122,7 @@
                </div>
         </div>
     </div>
-</div>     
+</div>
 
 <div class="bg_1 wrap_2 wrap_4">
     <div class="container">
@@ -133,7 +134,7 @@
                 </h2>
             </div>
         </div>
-      
+
 <div class="container">
     <div class="row wrap_1">
         <div class="grid_6">
@@ -147,7 +148,7 @@
                         <p class="text_3">
                             To ensure effective economic policy management for the attainment of macroeconomic stability and sustainable economic growth through sound fiscal policy and efficient public financial management, competent staff and robust systems for the development of Ghana.
                         </p>
-                     
+
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -164,12 +165,12 @@
                             <p class="text_3">
                                 To be the lead economic management institution for development and prosperity for all Ghanaians.
                             </p>
-                         
+
                         </div>
                         <div class="clearfix"></div>
                     </div>
                 </div>
-           
+
         </div>
     </div>
 </div>
@@ -187,7 +188,7 @@
                 <div id="owl">
                     <div class="item">
                         <p class="text_3">
-                            
+
                             Support the development of an efficient financial sector that supports structural transformation of the economy, promotes financial inclusion and is well integrated into the global financial system.
                             <br/>
                             Formulate, implement, monitor and evaluate macroeconomic, fiscal and financial policies for sustainable development.
