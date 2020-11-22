@@ -21,10 +21,10 @@
           <div class="col-md-7">
             <div class="card-body">
               <div class="brand-wrapper">
-               <!--<img src="assets/images/logo.svg" alt="logo" class="logo">--> 
+               <!--<img src="assets/images/logo.svg" alt="logo" class="logo">-->
               </div>
               <p class="login-card-description">Register Here!</p>
-              <form action="login.html" method="POST">
+              <form action="process.php" method="POST">
                 <div class="form-group">
                   <label for="fname" class="sr-only">First Name</label>
                   <input type="text" id= "fname" name="fname" class="form-control" placeholder="First Name *" value="" />
@@ -32,36 +32,41 @@
 
               <div class="form-group">
                 <label for="midname" class="sr-only">Middle Name</label>
-                  <input type="text" id="midname"name="midname" class="form-control" placeholder="Middle Name *" value="" />
+                  <input type="text" id="midname" name="midname" class="form-control" placeholder="Middle Name *" value="" />
               </div>
 
               <div class="form-group">
                 <label for="lname" class="sr-only">Last Name</label>
-                  <input type="text" id="lname"name="lname" class="form-control" placeholder="Last Name *" value="" />
+                  <input type="text" id="lname" name="lname" class="form-control" placeholder="Last Name *" value="" />
               </div>
-              
+
               <div class="form-group">
                   <div class="maxl">
-                      <label class="radio inline"> 
+                      <label class="radio inline">
                           <input type="radio" id="gen" name="gender" value="Male" checked>
-                          <span> Male </span> 
+                          <span> Male </span>
                       </label>
-                      <label class="radio inline"> 
+                      <label class="radio inline">
                           <input type="radio" id="gen" name="gender" value="Female">
-                          <span>Female </span> 
+                          <span>Female </span>
                       </label>
                   </div>
               </div>
 
                   <div class="form-group">
                     <label for="email" class="sr-only">Email</label>
-                    <input type="email" id="email"name="email" id="email" class="form-control" placeholder="Email address">
+                    <input type="email" id="email" name="email" id="email" class="form-control" placeholder="Email address">
                   </div>
                   <div class="form-group mb-4">
                     <label for="password" class="sr-only">Password</label>
                     <input type="password" id="email" name="password" id="password" class="form-control" placeholder="Password">
                   </div>
-                  <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Sign Up">
+
+                  <div class="form-group mb-4">
+                    <label for="password" class="sr-only">Confirm Password</label>
+                    <input type="password" id="email" name="password_2" id="password" class="form-control" placeholder="Password">
+                  </div>
+                  <input name="register" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Sign Up">
                 </form>
                 <!--<a href="#!" class="forgot-password-link">Forgot password?</a>
                 <p class="login-card-footer-text">Don't have an account? <a href="#!" style="color:blueviolet;">Sign Up</a></p>
@@ -91,7 +96,7 @@
               <div class="custom-control custom-checkbox login-card-check-box">
                 <input type="checkbox" class="custom-control-input" id="customCheck1">
                 <label class="custom-control-label" for="customCheck1">Remember me</label>
-              </div>              
+              </div>
               <a href="#!" class="text-reset">Forgot password?</a>
             </div>
             <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login">
