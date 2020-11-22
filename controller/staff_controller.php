@@ -13,12 +13,19 @@ function reg_staff($firstname,$lastname,$email,$rank,$password){
       return false;
   }
 
-
-
-
-
-
 }
+
+function login_staff($email,$password){
+  $login_staff = new Staff();
+
+  $login = $staff->login_staff($email,$password);
+
+  if($login){
+    return true;
+  }
+  else{
+      return false;
+  }
 
 
 ?>
