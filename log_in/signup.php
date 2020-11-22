@@ -58,14 +58,21 @@
                     <input type="email" id="email" name="email" id="email" class="form-control" placeholder="Email address">
                   </div>
                   <div class="form-group mb-4">
+                    <label for="rank" class="sr-only">Rank</label>
+                    <input type="rank" id="rank" name="rank" id="rank" class="form-control" placeholder="Rank">
+                  </div>
+                  <div class="form-group mb-4">
                     <label for="password" class="sr-only">Password</label>
                     <input type="password" id="email" name="password" id="password" class="form-control" placeholder="Password">
                   </div>
+
+          
 
                   <div class="form-group mb-4">
                     <label for="password" class="sr-only">Confirm Password</label>
                     <input type="password" id="email" name="password_2" id="password" class="form-control" placeholder="Password">
                   </div>
+
                   <input name="register" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Sign Up">
                 </form>
                 <!--<a href="#!" class="forgot-password-link">Forgot password?</a>
