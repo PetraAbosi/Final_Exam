@@ -18,7 +18,7 @@ function reg_staff($firstname,$lastname,$email,$rank,$password){
 function login_staff($email,$password){
   $login_staff = new Staff();
 
-  $login = $staff->login_staff($email,$password);
+  $login = $login_staff->login_staff($email,$password);
 
   if($login){
     return true;

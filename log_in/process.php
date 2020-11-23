@@ -2,7 +2,7 @@
 require_once '../controller/staff_controller.php';
 
 if (isset($_POST['register']) ){
-  echo 'data recieved';
+  echo 'Data Recieved';
 
 
   $firstname = $_POST['fname'];
@@ -19,23 +19,25 @@ if (isset($_POST['register']) ){
   $rank = $_POST['rank'];
 
   $password = $_POST['password'];
+
   $password_2 = $_POST['password_2'];
   
-  $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-  var_dump($hashed_password);
-  if(password_verify($password, $hashed_password)) {
-    return true;
-  }
-  else{
-    echo 'Wrong Password';
-  }
-  
-
-  
+  $hashed_password = password_hash('password', PASSWORD_DEFAULT);
+  $verify_hashed_password = password_verify('password', $hashed_password);
  
  reg_staff($firstname,$midname, $lastname,$email,$rank,$password);
 }
 
 
-
+if (isset($_POST['login'])){
+foreach ($_POST['email'] as $email => $password ){ //&& $_POST['password']){
+  $email = $row['email'];
+  $password = $row['password'];
+}
+echo 'Successful Log In!';
+}
+else{
+  echo 'Unsuccessful Log In!';
+}
+login_staff($email,$password);
  ?>
