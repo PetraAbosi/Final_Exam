@@ -15,13 +15,13 @@ if (isset($_POST['register']) ){
   $lastname = $_POST['lname'];
  
 
-  $email = $_POST['email'];
+  $email = $_SESSION['email'];
  
   $rank = $_POST['rank'];
 
-  $password = $_POST['password'];
+  $password = $_SESSION['password'];
 
-  $password_2 = $_POST['password_2'];
+  $password_2 = $_SESSION['password_2'];
   
   $hashed_password = password_hash('password', PASSWORD_DEFAULT);
   $verify_hashed_password = password_verify('password', $hashed_password);
@@ -31,7 +31,7 @@ if (isset($_POST['register']) ){
 
 
 if (isset($_POST['login'])){
-foreach ($_POST['email'] as $email => $password ){ //&& $_POST['password'])
+foreach ($_SESSION['email'] as $email => $password ){ //&& $_POST['password'])
   $email = $row['email'];
   $password = $row['password'];
   echo 'Successful Log In!';
