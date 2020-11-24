@@ -1,4 +1,5 @@
 <?php
+
 require_once '../model/staff.php';
 
 
@@ -15,10 +16,10 @@ function reg_staff($firstname,$lastname,$email,$rank,$password){
 
 }
 
-function login_staff($email,$password){
+function loginStaff($email,$password){
   $login_staff = new Staff();
 
-  $login = $login_staff->login_staff($email,$password);
+  $login = $login_staff->loginStaff($email,$password);
 
   if($login){
     return true;

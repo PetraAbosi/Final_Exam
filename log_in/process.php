@@ -1,8 +1,9 @@
 <?php
+session_start();
 require_once '../controller/staff_controller.php';
 
 if (isset($_POST['register']) ){
-  echo 'Data Recieved';
+  //echo 'Data Recieved';
 
 
   $firstname = $_POST['fname'];
@@ -30,14 +31,16 @@ if (isset($_POST['register']) ){
 
 
 if (isset($_POST['login'])){
-foreach ($_POST['email'] as $email => $password ){ //&& $_POST['password']){
+foreach ($_POST['email'] as $email => $password ){ //&& $_POST['password'])
   $email = $row['email'];
   $password = $row['password'];
+  echo 'Successful Log In!';
+  login_staff($email,$password);
 }
-echo 'Successful Log In!';
+
 }
 else{
   echo 'Unsuccessful Log In!';
 }
-login_staff($email,$password);
+
  ?>
