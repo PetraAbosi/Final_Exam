@@ -16,10 +16,10 @@ function reg_staff($firstname,$lastname,$email,$rank,$password){
 
 }
 
-function loginStaff($email,$password){
+function loginStaff($email){
   $login_staff = new Staff();
 
-  $login = $login_staff->loginStaff($email,$password);
+  $login = $login_staff->loginStaff($email);
 
   if($login){
     return true;
@@ -29,4 +29,6 @@ function loginStaff($email,$password){
   }
 
 }
+
+
 ?>

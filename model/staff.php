@@ -12,9 +12,9 @@ return $this->db_query($query);
 
 }
 
-function login_staff($email,$password){
+function login_staff($email){
 
-  $query = "SELECT * FROM staff WHERE email= '$email' and password = '$password' ";
+  $query = "SELECT * FROM staff WHERE email= '$email'";
 
   return $this->db_query($query);
 

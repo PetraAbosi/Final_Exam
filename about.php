@@ -43,13 +43,14 @@
                     </div>
                     <nav class="nav put-right">
                         <ul class="sf-menu">
-                            <li><a href="index.html">Home</a></li>
-                            <li class="current">
-                                <a href="about.html">About</a>
-
-                            </li>
-                            <li><a href="files.html">Files</a></li>
+                            <li><a href="index.php">Home</a></li>
+                            <li class="current"><a href="about.php">About</a></li>
+                                
+                            <!-- <li><a href="file.html">Files</a></li> -->
                             <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="../MOF_Website/log_in/login.php">Login/Register</a></li>
+
+                            
                         </ul>
                     </nav>
                 </div>

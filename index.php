@@ -41,21 +41,18 @@
                 <div class="grid_12">
                     <div class="brand put-left">
                         <h1>
-                            <a href="index.html">
+                            <a href="index.php">
                                 <img src="images/Ministry-of-Finance-Ghana_logo.png" alt="Logo"/>
                             </a>
                         </h1>
                     </div>
                     <nav class="nav put-right">
                         <ul class="sf-menu">
-                            <li class="current"><a href="index.html">Home</a></li>
-                            <li>
-                                <a href="about.html">About</a>
-
-                            </li>
+                            <li class="current"><a href="index.php">Home</a></li>
+                            <li><a href="about.php">About</a></li>
                             <!-- <li><a href="file.html">Files</a></li> -->
                             <li><a href="contacts.html">Contacts</a></li>
-                            <li><a href="contacts.html">Login/Register</a></li>
+                            <li><a href="../MOF_Website/log_in/login.php">Login/Register</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -77,7 +74,7 @@
         </div>
         <div data-src="images/about3.jpg">
             <div class="fadeIn camera_caption">
-                <a class="btn_1" href="log_in/login.html">Log In</a>
+                <a class="btn_1" href="../MOF_Website/log_in/login.php">Log In</a>
             </div>
         </div>
     </div>

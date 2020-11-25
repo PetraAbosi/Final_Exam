@@ -29,11 +29,12 @@
                   <label for="fname" class="sr-only">First Name</label>
                   <input type="text" id= "fname" name="fname" class="form-control" placeholder="First Name *" value="" />
               </div>
-
+              <!--
               <div class="form-group">
                 <label for="midname" class="sr-only">Middle Name</label>
                   <input type="text" id="midname" name="midname" class="form-control" placeholder="Middle Name *" value="" />
               </div>
+              -->
 
               <div class="form-group">
                 <label for="lname" class="sr-only">Last Name</label>

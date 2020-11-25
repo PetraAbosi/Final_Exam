@@ -24,7 +24,7 @@
                <!--<img src="assets/images/logo.svg" alt="logo" class="logo">--> 
               </div>
               <p class="login-card-description">Sign into your account</p>
-              <form action="files.html" method="POST">
+              <form action="process.php" method="POST">
                   <div class="form-group">
                     <label for="email" class="sr-only">Email</label>
                     <input type="email" name="email" id="email" class="form-control" placeholder="Email address">
@@ -34,12 +34,12 @@
                     <input type="password" id="password" name="password" class="form-control" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
 
                   </div>
-                  <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login">
+                  <input name="login" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Login">
                 </form>
                 <!--<a href="#!" class="forgot-password-link">Forgot password?</a>-->
                 <p class="login-card-footer-text">Don't have an account? <a href="signup.html" style="color:blueviolet;">Sign Up</a></p>
                 <nav class="login-card-footer-nav">
-                  <a href="_admin/login.html" style="color: #17a2b8;">Admin Log In</a>
+                  <a href="_admin/login.html" style="color: #17a2b8;">Visit the Link</a>
                  <!-- <a href="#!">Privacy policy</a>-->
                 </nav>
             </div>
