@@ -45,7 +45,8 @@ CREATE TABLE `admin` (
 CREATE TABLE `file` (
   `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `filename` varchar(255) NOT NULL,
-  `company_name` varchar(255) NOT NULL,
+  `company_name` varchar(255) NOT NULL, 
+
   `rep_name` varchar(255) NOT NULL,
   `staff_id` int(11) NOT NULL,
   `division_name` varchar(255) NOT NULL,
