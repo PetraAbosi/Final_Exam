@@ -43,22 +43,30 @@ if (isset($_POST['login']) ){
 
   $password = $_POST['password'];
   echo $password;
-  
+
  $login = login_staff($email);
   //var_dump ($login);
-  $hashed_pass = $login[0]['password']; 
+  $hashed_pass = $login[0]['password'];
  // var_dump ($hashed_pass);
   //exit;
   $verify_hashedpassword = password_verify($password, $hashed_pass);
-  var_dump($verify_hashedpassword);
-  exit;
+
   if($verify_hashedpassword){
-    return true;
+
+    $_SESSION['email'] = $login[0]['email'];
+    $_SESSION['staff_id'] = $login[0]['id'];
+
+
+
+    header("Location: ../index.php");
+
+    // redirect to form
+
   }
 else{
-  return false;
+  header("Location: login.php");
 }
-} 
+}
 
 
  ?>
