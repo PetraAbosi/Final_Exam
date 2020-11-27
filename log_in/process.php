@@ -1,7 +1,7 @@
 <?php
 
+session_start();
 require_once '../controller/staff_controller.php';
-
 
 if (isset($_POST['register']) ){
   //echo 'Data Recieved';
@@ -44,9 +44,21 @@ if (isset($_POST['login']) ){
   $password = $_POST['password'];
   echo $password;
   
- $login = loginStaff($email);
+ $login = login_staff($email);
   //var_dump ($login);
- 
+  $hashed_pass = $login[0]['password']; 
+ // var_dump ($hashed_pass);
+  //exit;
+  $verify_hashedpassword = password_verify($password, $hashed_pass);
+  var_dump($verify_hashedpassword);
+  exit;
+  if($verify_hashedpassword){
+    return true;
+  }
+else{
+  return false;
 }
+} 
+
 
  ?>

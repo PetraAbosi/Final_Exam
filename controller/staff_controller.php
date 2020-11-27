@@ -16,19 +16,17 @@ function reg_staff($firstname,$lastname,$email,$rank,$password){
 
 }
 
-function loginStaff($email){
-  $login_staff = new Staff();
-
-  $login = $login_staff->loginStaff($email);
-
-  if($login){
-    return true;
+function login_staff($email){
+  $login_array = array();
+  $login_object = new Staff();
+  $login_record = $login_object->login_staff($email);
+  if ($login_record) {
+      $one_record = $login_object->db_fetch();
+      $login_array[] = $one_record;
   }
-  else{
-      return false;
-  }
-
+  return $login_array;
 }
+
 
 
 ?>
