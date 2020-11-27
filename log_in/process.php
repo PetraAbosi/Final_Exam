@@ -58,7 +58,8 @@ if (isset($_POST['login']) ){
 
 
 
-    header("Location: ../index.php");
+    //header("Location: ../index.php");
+   header("Location: ../fileform/form.php");
 
     // redirect to form
 

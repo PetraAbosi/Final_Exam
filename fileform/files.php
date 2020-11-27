@@ -10,7 +10,7 @@ public function get_db_connect(){
 public function get_db_query($sqlquery){
     return true;
 }
-
+// file class insert, update, delete, read  and file controller connect to methods admin class write the functions
 $check = isset($_POST['fNameile', 'cName', 'rep_name', 'staff_id', 'dName', 'dep_name', 'fileSName', 'recDate', 'appcDate', 'retDate' ]);
  if(!$check){
    echo "Wasn't accepted!";
