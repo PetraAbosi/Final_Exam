@@ -72,8 +72,8 @@ if ($displaylist) {
 		echo "<td>$email</td>";
 		echo "<td>$phone</td>";
 		echo "<td>$dob</td>";
-		echo "<td><a href='delete.php?deleteId=$id' class= 'btn btn-outline-danger'>Delete</a>
-        | <a href='addcontact.php?updateId=$uid' class= 'btn btn-outline-success'>Update</a>
+		echo "<td><a href='process_file.php?deleteId=$id' class= 'btn btn-outline-danger'>Delete</a>
+        | <a href='process_file.php?updateId=$uid' class= 'btn btn-outline-success'>Update</a>
   </td>";
 
   echo "</tr>";
