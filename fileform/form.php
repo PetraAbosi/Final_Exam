@@ -16,19 +16,19 @@
   <body>
 
     <div class="container">
-                <form class="form-horizontal" role="form">
-                <form action="../fileform/files.php" method="POST">
+
+                <form action="files.php" method="POST" class="form-horizontal" role="form">
                     <h2>MOF Files</h2>
                     <div class="form-group">
                         <label for="fName" class="col-sm-3 control-label">File Name</label>
                         <div class="col-sm-9">
-                            <input type="text" name ="fNameile" id="fNameile" placeholder="File Name" class="form-control" autofocus required> 
+                            <input type="text" name ="fname" id="fNameile" placeholder="File Name" class="form-control" autofocus required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="cName" class="col-sm-3 control-label">Company Name</label>
                         <div class="col-sm-9">
-                            <input type="text" name ="cName" id="cName" placeholder="Company Name" class="form-control" autofocus required>
+                            <input type="text" name ="cname" id="cName" placeholder="Company Name" class="form-control" autofocus required>
                         </div>
                     </div>
                     <div class="form-group">
@@ -46,7 +46,7 @@
                         <div class="form-group">
                             <label for="cName" class="col-sm-3 control-label">Division Name</label>
                             <div class="col-sm-9">
-                                <input type="text" name ="dName" id="dName" placeholder="Division Name" class="form-control" autofocus required>
+                                <input type="text" name ="dname" id="dName" placeholder="Division Name" class="form-control" autofocus required>
                             </div>
                         </div>
                         <div class="form-group">
@@ -58,33 +58,33 @@
                             <div class="form-group">
                                 <label for="fileSName" class="col-sm-3 control-label">File Status</label>
                                 <div class="col-sm-9">
-                                    <input type="text" name ="fileSName" id="fileSName" placeholder="File Status" class="form-control" autofocus required>
+                                    <input type="text" name ="file_status" id="fileSName" placeholder="File Status" class="form-control" autofocus required>
                                 </div>
                             </div>
 
                          <div class="form-group">
                         <label for="recDate" class="col-sm-3 control-label">Date Received</label>
                         <div class="col-sm-9">
-                            <input type="date" name ="recDate" id="recDate" class="form-control" required>
+                            <input type="date" name ="date_received" id="recDate" class="form-control" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="recDate" class="col-sm-3 control-label">Date Approved</label>
                         <div class="col-sm-9">
-                            <input type="date" name ="appcDate" id="appcDate" class="form-control" required>
+                            <input type="date" name ="date_approved" id="appcDate" class="form-control" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="recDate" class="col-sm-3 control-label">Date Returned</label>
                         <div class="col-sm-9">
-                            <input type="date" name ="retDate" id="retDate" class="form-control" required>
+                            <input type="date" name ="date_returned" id="retDate" class="form-control" required>
                         </div>
                     </div>
 
                             </div>
                         </div>
                         <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block">SUBMIT</button>
+                        <button type="submit" name="file" class="btn btn-primary btn-block">SUBMIT</button>
                         </div>
                 </form> <!-- /form -->
             </div> <!-- ./container -->
