@@ -36,16 +36,16 @@ require "../controller/file_controller.php";
 
 
 <div class="container">
-  <h1><a href="../index.php">Back to Home</a></h1>
-  <h1>List of all contact</h1>
+  <!-- <h1><a href="../index.php">Back to Home</a></h1> -->
+  <h1>List of all Files</h1>
   <table class="table table-hover ">
     <thead>
       <tr>
 
         <th>Name</th>
-        <th>Email</th>
-        <th>Phone Number</th>
-        <th>DOB</th>
+        <th>Rep Name</th>
+        <th>Staff ID</th>
+        <th>Division Name</th>
         <th>Action</th>
 
       </tr>

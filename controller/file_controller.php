@@ -17,13 +17,16 @@ function create($filename,$company_name,$rep_name,$staff_id,$division_name,$depa
 
 
 function readAll(){
-  $check = (new File())->readAll();
 
-  if ($check) {
-    return true;
-  }else {
-    return false;
+  $arr = array();
+  $obj = new File();
+  $read = $obj->readAll();
+  if ($read) {
+      $one_record = $obj->db_fetch();
+      $arr[] = $one_record;
   }
+  return $arr;
+
 }
 
 
