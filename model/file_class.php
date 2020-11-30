@@ -6,9 +6,9 @@ class File extends Connection
 
 // create a file
 
-public function create($filename,$company_name,$rep_name,$staff_id,$division_name,$department_name,$file_status,$file_status, $date_received, $date_approved, $date_returned){
+public function create($filename,$company_name,$rep_name,$staff_id,$division_name,$department_name,$file_status, $date_received, $date_approved, $date_returned){
 
-$sql = "INSERT INTO file (filename, company_name, rep_name, staff_id, division_name, department_name, file_status, date_received, date_approved, date_returned) VALUES ('$filename','$company_name','$rep_name','$staff_id','$division_name','$department_name','$file_status','$file_status', '$date_received', '$date_approved', '$date_returned')";
+$sql = "INSERT INTO `file` (filename, company_name, rep_name, staff_id, division_name, department_name, file_status, date_received, date_approved, date_returned) VALUES ('$filename','$company_name','$rep_name','$staff_id','$division_name','$department_name','$file_status', '$date_received', '$date_approved', '$date_returned')";
 
 return $this->db_query($sql);
 }
@@ -34,7 +34,7 @@ public function readOne($id){
 
 }
 // update a file
-public function updateOne($filename,$company_name,$rep_name,$staff_id,$division_name,$department_name,$file_status,$file_status, $date_received, $date_approved, $date_returned,$id){
+public function updateOne($filename,$company_name,$rep_name,$staff_id,$division_name,$department_name,$file_status,$date_received, $date_approved, $date_returned,$id){
 
   $sql = " UPDATE file SET
                   filename='$filename',

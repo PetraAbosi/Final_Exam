@@ -2,9 +2,9 @@
 
 require_once '../model/file_class.php';
 
-function create($filename,$company_name,$rep_name,$staff_id,$division_name,$department_name,$file_status,$file_status, $date_received, $date_approved, $date_returned){
+function create($filename,$company_name,$rep_name,$staff_id,$division_name,$department_name,$file_status, $date_received, $date_approved, $date_returned){
 
-  $insert = (new File())->create($filename,$company_name,$rep_name,$staff_id,$division_name,$department_name,$file_status,$file_status, $date_received, $date_approved, $date_returned);
+  $insert = (new File())->create($filename,$company_name,$rep_name,$staff_id,$division_name,$department_name,$file_status, $date_received, $date_approved, $date_returned);
 
   if ($insert) {
     return true;
@@ -39,8 +39,8 @@ function readOne($id){
 
 
 
-function updateOne($filename,$company_name,$rep_name,$staff_id,$division_name,$department_name,$file_status,$file_status, $date_received, $date_approved, $date_returned,$id){
-  $heck  = (new File())->updateOne($filename,$company_name,$rep_name,$staff_id,$division_name,$department_name,$file_status,$file_status, $date_received, $date_approved, $date_returned,$id);
+function updateOne($filename,$company_name,$rep_name,$staff_id,$division_name,$department_name,$file_status, $date_received, $date_approved, $date_returned,$id){
+  $heck  = (new File())->updateOne($filename,$company_name,$rep_name,$staff_id,$division_name,$department_name,$file_status,$date_received, $date_approved, $date_returned,$id);
   if ($check) {
     return true;
   }else {
