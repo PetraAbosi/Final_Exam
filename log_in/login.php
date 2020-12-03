@@ -21,7 +21,7 @@
           <div class="col-md-7">
             <div class="card-body">
               <div class="brand-wrapper">
-               <!--<img src="assets/images/logo.svg" alt="logo" class="logo">--> 
+               <!--<img src="assets/images/logo.svg" alt="logo" class="logo">-->
               </div>
               <p class="login-card-description">Sign into your account</p>
               <form action="process.php" method="POST">
@@ -31,7 +31,7 @@
                   </div>
                   <div class="form-group mb-4">
                     <label for="password" class="sr-only">Password</label>
-                    <input type="password" id="password" name="password" class="form-control" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Password"  required>
 
                   </div>
                   <input name="login" id="login" class="btn btn-block login-btn mb-4" type="submit" value="Login">
@@ -64,7 +64,7 @@
               <div class="custom-control custom-checkbox login-card-check-box">
                 <input type="checkbox" class="custom-control-input" id="customCheck1">
                 <label class="custom-control-label" for="customCheck1">Remember me</label>
-              </div>              
+              </div>
               <a href="#!" class="text-reset">Forgot password?</a>
             </div>
             <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login">
