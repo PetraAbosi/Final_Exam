@@ -52,7 +52,7 @@
                             <li><a href="about.php">About</a></li>
                             <!-- <li><a href="file.html">Files</a></li> -->
                             <li><a href="contacts.html">Contacts</a></li>
-                            <li><a href="../MOF_Website/log_in/login.php">Login/Register</a></li>
+                            <li><a href="./log_in/login.php">Login/Register</a></li>
                         </ul>
                     </nav>
                 </div>

@@ -31,19 +31,20 @@ function readAll(){
 
 
 function readOne($id){
-    $check = (new File())->readOne($id);
-
-    if ($check) {
-      return true;
-    }else {
-      return false;
-    }
+  $arr = array();
+  $obj = new File();
+  $read = $obj->readOne($id);
+  if ($read) {
+      $one_record = $obj->db_fetch();
+      $arr[] = $one_record;
+  }
+  return $arr;
 }
 
 
 
 function updateOne($filename,$company_name,$rep_name,$staff_id,$division_name,$department_name,$file_status, $date_received, $date_approved, $date_returned,$id){
-  $heck  = (new File())->updateOne($filename,$company_name,$rep_name,$staff_id,$division_name,$department_name,$file_status,$date_received, $date_approved, $date_returned,$id);
+  $check  = (new File())->updateOne($filename,$company_name,$rep_name,$staff_id,$division_name,$department_name,$file_status,$date_received, $date_approved, $date_returned,$id);
   if ($check) {
     return true;
   }else {

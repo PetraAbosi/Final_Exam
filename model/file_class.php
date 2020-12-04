@@ -36,22 +36,25 @@ public function readOne($id){
 // update a file
 public function updateOne($filename,$company_name,$rep_name,$staff_id,$division_name,$department_name,$file_status,$date_received, $date_approved, $date_returned,$id){
 
-  $sql = " UPDATE file SET
-                  filename='$filename',
-                  company_name= '$company_name',
-                  rep_name = '$rep_name',
-                  staff_id = '$staff_id',
-                  division_name = '$division_name',
-                  department_name = '$department_name',
-                  file_status = '$file_status',
-                  date_received = '$date_received',
-                  date_approved = '$date_approved',
-                  date_returned = '$date_returned'
+  $sql = " UPDATE `file` SET
+                  `filename`='$filename',
+                  `company_name`= '$company_name',
+                  `rep_name` = '$rep_name',
+                  `staff_id` = '$staff_id',
+                  `division_name` = '$division_name',
+                  `department_name` = '$department_name',
+                  `file_status` = '$file_status',
+                  `date_received` = '$date_received',
+                  `date_approved` = '$date_approved',
+                  `date_returned` = '$date_returned'
 
 
-                  WHERE id = '$id'
+              WHERE `id` = '$id'
 
                    ";
+
+
+return $this->db_query($sql);
 
 }
 

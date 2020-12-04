@@ -73,7 +73,7 @@ if ($displaylist) {
 		echo "<td>$phone</td>";
 		echo "<td>$dob</td>";
 		echo "<td><a href='process_file.php?deleteId=$id' class= 'btn btn-outline-danger'>Delete</a>
-        | <a href='process_file.php?updateId=$uid' class= 'btn btn-outline-success'>Update</a>
+        | <a href='update.php?updateId=$uid' class= 'btn btn-outline-success'>Update</a>
   </td>";
 
   echo "</tr>";
