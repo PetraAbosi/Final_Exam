@@ -51,7 +51,7 @@
                             <li class="current"><a href="index.php">Home</a></li>
                             <li><a href="about.php">About</a></li>
                             <!-- <li><a href="file.html">Files</a></li> -->
-                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="contacts.php">Contacts</a></li>
                             <li><a href="./log_in/login.php">Login/Register</a></li>
                         </ul>
                     </nav>
@@ -211,7 +211,7 @@
     <div class="row wrap_9 wrap_4 wrap_10">
         <div class="grid_12">
             <div class="header_1 wrap_3 color_3">
-                Get in Touch
+               <!-- Get in Touch
             </div>
             <div class="box_3">
                 <ul class="list_1">
@@ -221,6 +221,7 @@
                     <li><a class="fa fa-pinterest" href="#"></a></li>
                 </ul>
             </div>
+            -->
         </div>
     </div>
 </div>
@@ -236,7 +237,7 @@
                 <p class="info text_4 color_4">
                     © <span id="copyright-year">copyright 2020</span> | <a href="https://www.mofep.gov.gh/">Privacy Policy</a> <br/>
                     Website designed by <a href="https://www.linkedin.com/mynetwork/" rel="nofollow">LinkedIn</a> <br/>
-                    <a href='https://www.freepik.com/photos/technology'>Technology photo created by mego-studio - www.freepik.com</a>
+                    
                 </p>
             </div>
         </div>
