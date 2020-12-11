@@ -78,5 +78,16 @@ class Connection
 
 
 
+	public function getRow(){
+		if ($this->results == false) {
+			return 0;
+		}
+		else {
+		return mysqli_num_rows($this->results);
+		}
+	}
+
+
+
 }
 ?>

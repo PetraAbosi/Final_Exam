@@ -28,10 +28,13 @@ $in = create($filename,$company_name,$rep_name,$staff_id,$division_name,$departm
 
 if ($in) {
 
-  echo "success";
+ 
+  $_SESSION['file-create'] = "File has been created successfully!";
+  header("Location: listfiles.php");
   // code...
 }else {
-  echo "failed";
+  $_SESSION['file-create-err'] = "Error creating file!";
+  header("Location: listfiles.php");
 }
 
 
@@ -65,10 +68,14 @@ $in = updateOne($filename,$company_name,$rep_name,$staff_id,$division_name,$depa
 
 if ($in) {
 
-  echo "success, file updated";
+  
+  $_SESSION['file-update'] = "File has been updated successfully!";
+  header("Location: listfiles.php");
   // code...
 }else {
-  echo "failed";
+ 
+  $_SESSION['file-update-err'] = "Error updating file!";
+  header("Location: listfiles.php");
 }
 
 

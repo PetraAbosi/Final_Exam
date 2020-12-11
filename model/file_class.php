@@ -33,6 +33,13 @@ public function readOne($id){
 
 
 }
+
+public function fileCount(){
+  $sql = "SELECT COUNT(*) FROM file";
+
+  return $this->db_query($sql);
+
+}
 // update a file
 public function updateOne($filename,$company_name,$rep_name,$staff_id,$division_name,$department_name,$file_status,$date_received, $date_approved, $date_returned,$id){
 

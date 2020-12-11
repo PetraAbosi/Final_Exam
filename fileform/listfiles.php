@@ -2,18 +2,21 @@
 
 session_start();
 require "../controller/file_controller.php";
+$displaylist = readAll();
 
 
 //require('../controllers/personcontroller.php');
 
 //echo $value['pname'];
 
+include_once "errors.php";
+
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Add Contact</title>
+	<title>List</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<!-- bootstrap css cdn -->
@@ -28,6 +31,11 @@ require "../controller/file_controller.php";
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/validate.js"></script> -->
 
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
 </head>
 <body>
 
@@ -35,10 +43,11 @@ require "../controller/file_controller.php";
 
 
 
+
 <div class="container">
   <!-- <h1><a href="../index.php">Back to Home</a></h1> -->
-  <h1>List of all Files</h1>
-  <table class="table table-hover ">
+  <h1 class="mt-5">List of all Files</h1>
+  <table class="table">
     <thead>
       <tr>
 
@@ -59,9 +68,9 @@ $displaylist = readAll();
 
 if ($displaylist) {
 	foreach ($displaylist as $value) {
-		$id = $value['id'];
+		$id = $value['id'] ;
 		$name = $value['filename'];
-		$email = $value['rep_name'];
+		$email = $value['rep_name'] ;
 		$phone =$value['staff_id'];
 		$dob = $value['division_name'];
         $_SESSION['id']=$id;
@@ -96,56 +105,20 @@ if ($displaylist) {
     </tbody>
   </table>
 
- <?php if (isset($_SESSION['response'])): ?>
-<div class='alert alert-danger'>
-
-	<?php
-	echo $_SESSION['response'];
-	unset($_SESSION['response']);
-	?>
-
-	</div>
-<?php endif ?>
-
-
-<?php if (isset($_SESSION['update_response'])): ?>
-
-      <div class="alert alert-success">
-        <?php
-        echo $_SESSION['update_response'];
-        unset($_SESSION['update_response']);
-         ?>
-
-      </div>
-
-    <?php endif ?>
-
-
-
-
+ 
 </div>
 
 
 
-<!--
-	<?php
-		require('../controllers/personcontroller.php');
-		$displaylist = displayallcontacts();
-		if ($displaylist) {
-			//loop the through the array and display each
-			//print_r($displaylist);
-			//echo "<br><br>";
-			foreach ($displaylist as $key => $value) {
-				//print_r($key);
-				//print_r($value['email']);
-				$id = $value['pid'];
-				$_SESSION['id']=$id;
-				$sessionId = $_SESSION['id'];
-				echo "<br>";
-				echo ($value['pname'])."  <a href='delete.php?deleteId=$id'>Delete</a> || <a href='update.php?updateId=$sessionId'>Update</a>";
-				}
-		}
-	?> -->
+<script>
+window.setTimeout(function() {
+    $(".alert").fadeTo(500, 0).slideUp(500, function(){
+        $(this).remove();
+    });
+}, 3000);
+
+
+</script>
 
 </body>
 </html>

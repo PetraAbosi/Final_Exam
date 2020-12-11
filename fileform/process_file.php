@@ -8,16 +8,19 @@ if (isset($_GET['deleteId'])) {
   $is_del = deleteOne($id);
 
   if ($is_del) {
-    echo " file deleted!";
+    
+    $_SESSION['file-del'] = "file deleted successfully!";
+
+    header("Location: listfiles.php");
+   
     exit;
   }else {
-    echo " error deleting file";
+    $_SESSION['file-del-err'] = "Error deleting file!";
+    header("Location: listfiles.php");
   }
 }
 
-// if (isset($_GET['updateId'])) {
-//
-// }
+
 
 
  ?>

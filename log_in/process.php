@@ -59,11 +59,12 @@ if (isset($_POST['login']) ){
 
     $_SESSION['email'] = $login[0]['email'];
     $_SESSION['staff_id'] = $login[0]['id'];
+    $_SESSION['firstname'] = $login[0]['firstname'];
 
 
 
     //header("Location: ../index.php");
-   header("Location: ../fileform/form.php");
+   header("Location: ../fileform/dashboard.php");
 
     // redirect to form
 

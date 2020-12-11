@@ -63,3 +63,31 @@ function deleteOne($id){
     return false;
   }
 }
+
+function fileCount(){
+  // $arr = array();
+  $obj = new File();
+  $read = $obj->readAll();
+  if ($read) {
+      $row = $obj->getRow();
+      // $arr[] = $one_record;
+      return ($row != null) ? $row : "0";
+  }else{
+    return "0";
+  }
+  // return $count;
+
+}
+
+
+
+// function fileCount(){
+//   $obj = new File();
+//   $read = $obj->fileCount();
+//   if($response){
+//       $row = $cartObj->getRow();
+//       return ($row != null) ? $row : "0";
+//   }  else{
+//       return "0";
+//   }   
+// }

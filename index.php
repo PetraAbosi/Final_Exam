@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +56,15 @@
                             <li><a href="about.php">About</a></li>
                             <!-- <li><a href="file.html">Files</a></li> -->
                             <li><a href="contacts.html">Contacts</a></li>
-                            <li><a href="./log_in/login.php">Login/Register</a></li>
+                            <?php
+                            if (!empty($_SESSION['staff_id'])){
+                                echo '<li><a href="./log_in/logout.php">Welcome, '.$_SESSION['firstname'].'</a></li>';
+                                echo '<li><a href="./log_in/logout.php">Logout</a></li>';
+                            }else{
+                                echo '<li><a href="./log_in/login.php">Login/Register</a></li>';
+                            }
+                            ?>
+                            
                         </ul>
                     </nav>
                 </div>
