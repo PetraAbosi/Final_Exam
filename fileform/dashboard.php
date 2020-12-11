@@ -2,8 +2,8 @@
 session_start();
 require "../controller/file_controller.php";
 
-if (!empty($_SESSION['staff_id'])){
-    $_SERVER['HTTP_REFERER'];
+if (empty($_SESSION['staff_id'])){
+   header("Location: ../log_in/login.php");
 }
 
 

@@ -45,10 +45,10 @@
                         </div>
                         <nav class="nav put-right">
                             <ul class="sf-menu">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.php">Home</a></li>
                                 <li>
-                                    <a href="about.html">About</a>
-                                    <ul>
+                                    <a href="about.php">About</a>
+                                    <!--<ul>
                                         <li><a href="#">Lorem ipsum</a></li>
                                         <li><a href="#">Dolor sit amet</a>
                                         <li><a href="#">Ctetur adipisicing</a>
@@ -61,11 +61,12 @@
                                                 <li><a href="#">Minim veniam</a></li>
                                             </ul>
                                         </li>
-                                    </ul>
+                                    </ul>-->
                                 </li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li class="current"><a href="contacts.html">Contacts</a></li>
+                                <!-- <li><a href="services.html">Services</a></li>-->
+                                <li class="current"><a href="contacts.php">Contacts</a></li>
+                                <li><a href="log_in/login.php">Log In/ Register</a></li> 
+                               
                             </ul>
                         </nav>
                     </div>
@@ -89,7 +90,7 @@
                 <div class="row">
                     <div class="grid_12">
                         <iframe class="map"
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24214.807650104907!2d-73.94846048422478!3d40.65521573400813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395650655094"
+                                src= "images/location.jpg"
                                 style="border:0">
                         </iframe>
                     </div>
@@ -102,26 +103,24 @@
                             </h2>
                             <address>
                                 <p class="text_7 color_6">
-                                    Lorem ipsum dolor sit amet, consecteturpiscinger elit <br/>
-                                    um dolor sit amet, consecteturpiscing.
+                                    Find out more from our Social Media Platforms
                                 </p>
+                               
                                 <p class="text_8">
-                                    Our <a href="http://www.templatemonster.com/" rel="nofollow">premium website templates</a> go with 24/7 support. <br/>
-                                    <br/>
-                                    If you have any questions about customization of free themes, address <br/>
-                                    to guys from <a href="http://www.templatetuning.com/" rel="nofollow">TemplateTuning</a>. Note that it's a paid service. <br/>
-                                    <br/>
-                                    The Company Name Inc. <br/>
-                                    9870 St Vincent Place, <br/>
-                                    Glasgow, DC 45 Fr 45. <br/>
+                                
+                                    Ministry of Finance </br>
+                                    Finance Drive, Accra. <br/>
+                                    P. O. Box M40, Accra - Ghana <br/>
+                                    GA-144-2024 <br/>
                                     Telephone: +1 800 603 6035 <br/>
-                                    FAX: +1 800 889 9898 <br/>
-                                    E-mail: <a href="#">mail@demolink.org</a>
+                                    FAX: +233 302-747-197 <br/>
+                                    E-mail: info@mofep.gov.gh</br>
+                                    Website:<a href="https://www.mofep.gov.gh/">Link</a>
                                 </p>
                             </address>
                         </div>
                     </div>
-                    <div class="grid_6">
+                   <!-- <div class="grid_6">
                         <div class="wrap_18">
                             <h2 class="header_2 indent_2">
                                 Contact Form
@@ -186,11 +185,12 @@
                 </div>
             </div>
         </div>
+        -->
         <div class="container">
             <div class="row wrap_9 wrap_4 wrap_10">
                 <div class="grid_12">
                     <div class="header_1 wrap_3 color_3">
-                        Get in Touch
+                       <!-- Get in Touch
                     </div>
                     <div class="box_3">
                         <ul class="list_1">
@@ -200,6 +200,7 @@
                             <li><a class="fa fa-pinterest" href="#"></a></li>
                         </ul>
                     </div>
+                    -->
                 </div>
             </div>
         </div>
@@ -212,9 +213,10 @@
     <div class="container">
         <div class="row">
             <div class="grid_12">
-                <p class="info text_4 color_4">
-                    © <span id="copyright-year"></span> | <a href="#">Privacy Policy</a> <br/>
-                    Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>
+            <p class="info text_4 color_4">
+                    © <span id="copyright-year">copyright 2020</span> | <a href="https://www.mofep.gov.gh/">Privacy Policy</a> <br/>
+                    Website designed by <a href="https://www.linkedin.com/mynetwork/" rel="nofollow">LinkedIn</a> <br/>
+
                 </p>
             </div>
         </div>

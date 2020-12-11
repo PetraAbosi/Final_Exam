@@ -55,6 +55,7 @@ session_start();
                             <li class="current"><a href="index.php">Home</a></li>
                             <li><a href="about.php">About</a></li>
                             <!-- <li><a href="file.html">Files</a></li> -->
+<<<<<<< HEAD
                             <li><a href="contacts.html">Contacts</a></li>
                             <?php
                             if (!empty($_SESSION['staff_id'])){
@@ -65,6 +66,10 @@ session_start();
                             }
                             ?>
                             
+=======
+                            <li><a href="contacts.php">Contacts</a></li>
+                            <li><a href="./log_in/login.php">Login/Register</a></li>
+>>>>>>> c213010c88672a24a33f1fbce61cba4e1021c901
                         </ul>
                     </nav>
                 </div>
@@ -223,7 +228,7 @@ session_start();
     <div class="row wrap_9 wrap_4 wrap_10">
         <div class="grid_12">
             <div class="header_1 wrap_3 color_3">
-                Get in Touch
+               <!-- Get in Touch
             </div>
             <div class="box_3">
                 <ul class="list_1">
@@ -233,6 +238,7 @@ session_start();
                     <li><a class="fa fa-pinterest" href="#"></a></li>
                 </ul>
             </div>
+            -->
         </div>
     </div>
 </div>
@@ -248,7 +254,7 @@ session_start();
                 <p class="info text_4 color_4">
                     © <span id="copyright-year">copyright 2020</span> | <a href="https://www.mofep.gov.gh/">Privacy Policy</a> <br/>
                     Website designed by <a href="https://www.linkedin.com/mynetwork/" rel="nofollow">LinkedIn</a> <br/>
-                    <a href='https://www.freepik.com/photos/technology'>Technology photo created by mego-studio - www.freepik.com</a>
+                    
                 </p>
             </div>
         </div>

@@ -47,7 +47,7 @@
                             <li class="current"><a href="about.php">About</a></li>
                                 
                             <!-- <li><a href="file.html">Files</a></li> -->
-                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="contacts.php">Contacts</a></li>
                             <li><a href="../MOF_Website/log_in/login.php">Login/Register</a></li>
 
                             
@@ -216,7 +216,7 @@
     <div class="row wrap_9 wrap_4 wrap_10">
         <div class="grid_12">
             <div class="header_1 wrap_3 color_3">
-                Get in Touch
+             <!--   Get in Touch
             </div>
             <div class="box_3">
                 <ul class="list_1">
@@ -226,6 +226,7 @@
                     <li><a class="fa fa-pinterest" href="#"></a></li>
                 </ul>
             </div>
+            -->
         </div>
     </div>
 </div>
